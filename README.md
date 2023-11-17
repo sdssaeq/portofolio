@@ -1,1 +1,1 @@
-# Portofolio Website by React + Vite + TailwindCSS
+# Portofolio Made By React + TypeScript + Vite

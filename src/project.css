@@ -1,7 +1,8 @@
 :root {
   --main-bg-color: #1e288f;
-  --second-bg-color: #151c65;
+  --second-bg-color: #b1e3ff;
   --main-text-color: #fff;
+  --second-text-color: #000;
   --dark-mode-bg: #333;
   --dark-mode-text: #fff;
 }
@@ -26,7 +27,7 @@
 }
 
 .container-project {
-  color: #fff;
+  color: var(--second-text-color);
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -62,13 +63,14 @@
 .card-github {
   border-radius: 10px;
   padding: 30px;
-  color: #fff;
+  color: var(--second-text-color);
   background-color: var(--second-bg-color);
   backdrop-filter: blur(px);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s ease-out;
 }
 .app.dark-mode .card-github {
+  color: var(--dark-mode-text);
   background-color: var(--dark-mode-bg);
 }
 .card-github:hover {

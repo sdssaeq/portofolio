@@ -5,8 +5,8 @@
 }
 
 :root {
-  --main-bg-color: #1e288f;
-  --second-bg-color: #2734b9;
+  --main-bg-color: #b1e3ff;
+  --second-bg-color: #b1e3ff;
   --main-text-color: #fff;
   --dark-mode-bg: #333;
   --dark-mode-text: #fff;
@@ -37,7 +37,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #fff;
+  border-top: 1px solid var(--dark-mode-bg);
   margin: 1em 0;
   padding: 0;
 }
@@ -107,7 +107,7 @@ a {
   padding-top: 100px;
 }
 .container {
-  color: #fff;
+  color: var(--second-text-color);
   height: 100vh;
   display: flex;
   flex-direction: column-reverse;
@@ -126,6 +126,7 @@ a {
   overflow: hidden;
 }
 .app.dark-mode .wrapper {
+  color: var(--main-text-color);
   background-color: var(--dark-mode-bg);
 }
 .wrapper:hover {

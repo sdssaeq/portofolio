@@ -58,6 +58,7 @@ a {
   justify-content: center;
   align-items: center;
   /* background: rgba(var(--dark-mode-bg), 0.4); */
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   overflow: hidden;
   padding: 1vh;
@@ -102,7 +103,9 @@ a {
   animation: gradientAnimation 5s infinite;
   font-size: xx-large;
 }
-
+.container-navbar {
+  padding-top: 100px;
+}
 .container {
   color: #fff;
   height: 100vh;
@@ -171,6 +174,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding: 0px;
 }
 
 /* contact.tsx css */
@@ -198,7 +202,7 @@ a {
 
 @media screen and (max-width: 640px) {
   .card {
-    width: 400px;
+    width: 362px;
     height: auto;
   }
   .card-contact {
@@ -207,5 +211,9 @@ a {
     flex-direction: row;
     align-items: baseline;
     /* justify-content: baseline; */
+  }
+
+  .navbar {
+    justify-content: space-between;
   }
 }

@@ -46,7 +46,7 @@
 }
 
 .card-project {
-  padding-top: 100px;
+  /* padding-top: 100px; */
   flex-wrap: wrap;
   padding: 30px;
   display: flex;
@@ -96,9 +96,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 10px;
   }
   .card-github {
-    border-radius: 2%;
-    padding: 50px;
+    border-radius: 4%;
+    padding: 0px;
   }
 }

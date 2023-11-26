@@ -80,9 +80,6 @@ a {
   padding: 10px;
   font-size: 18px;
 }
-.nav-items button {
-  margin-right: auto;
-}
 /* Main.tsx css */
 @keyframes gradientAnimation {
   0% {

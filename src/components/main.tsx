@@ -4,11 +4,11 @@ function Main() {
     <>
       <section id="about" className="section">
         <br />
+        <br />
         <div className="container container-navbar">
           <div className="wrapper">
             <div className="card">
               <div>
-                <h1>Hi!</h1>
                 <h2 className="textColorChangeAnimation" data-text="Satrio">
                   I'm <span>Satrio</span> - Full Stack Developer
                 </h2>
@@ -17,12 +17,10 @@ function Main() {
                 <br />
                 <p>
                   on the verge of graduating from Universitas Bina Insani.
-                  Currently in my final year, I've immersed myself in the
-                  dynamic world of web development, honing my skills to create
-                  robust and user-friendly full stack applications.
+                  Currently in my final year, honing my skills to create robust
+                  and user-friendly full stack applications.
                 </p>
               </div>
-              <br />
               <h1>Tech Stack</h1>
               <div className="card card-skill">
                 <svg

@@ -36,7 +36,6 @@ function Contact() {
         <div className="container container-contact">
           <div className="wrapper wrapper-contact">
             <h1>Reach Out to me!</h1>
-            <h2>Contact</h2>
             <br />
             <hr />
             <div className="card card-contact">
@@ -46,8 +45,8 @@ function Contact() {
                 onClick={Notif}
               >
                 <svg
-                  width="100"
-                  height="100"
+                  width="60"
+                  height="60"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="#ffffff"
@@ -57,12 +56,13 @@ function Contact() {
                   <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
                 </svg>
               </a>
+              <br />
               <a href="https://wa.me/+6281528999217" target="_blank">
                 <svg
                   onClick={Whatsapp}
                   xmlns="http://www.w3.org/2000/svg"
-                  width="100"
-                  height="100"
+                  width="60"
+                  height="60"
                   viewBox="0 0 50 50"
                   fill={state.isClicked1 ? "#14eb46" : "#ffffff"}
                 >

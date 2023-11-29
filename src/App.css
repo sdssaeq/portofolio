@@ -220,6 +220,7 @@ a {
   }
 
   .navbar {
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -14,7 +14,7 @@ function App() {
     if (!isDarkMode) {
       toast.success("Dark Mode Activated", {
         position: "bottom-center",
-        autoClose: 5000,
+        autoClose: 200,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -25,7 +25,7 @@ function App() {
     } else {
       toast.success("Light Mode Activated", {
         position: "bottom-center",
-        autoClose: 5000,
+        autoClose: 200,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,

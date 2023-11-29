@@ -43,7 +43,7 @@ function Contact() {
               <div
                 className="svg_circle wa"
                 onClick={() =>
-                  redirectToExternalUrl("https://www.instagram.com/satrio44_")
+                  redirectToExternalUrl("https://wa.me/+6281528999217")
                 }
               >
                 <svg
@@ -63,7 +63,7 @@ function Contact() {
               <div
                 className="svg_circle ig"
                 onClick={() =>
-                  redirectToExternalUrl("https://wa.me/+6281528999217")
+                  redirectToExternalUrl("https://www.instagram.com/satrio44_")
                 }
               >
                 <svg

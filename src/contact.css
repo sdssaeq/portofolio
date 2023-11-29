@@ -108,22 +108,22 @@
   .circle_container {
     width: 100px;
     height: 100px;
-    inset: 120px 20px;
+    inset: 120px 5px;
   }
   .circle_container img {
     width: 100px;
     height: 100px;
   }
   .wa {
-    inset: 160px 130px;
+    inset: 160px 115px;
   }
 
   .mail {
-    inset: 160px calc(130px + 70px * 1);
+    inset: 160px calc(115px + 70px * 1);
   }
 
   .ig {
-    inset: 160px calc(130px + 70px * 2);
+    inset: 160px calc(115px + 70px * 2);
   }
   .text_container {
     margin-top: 5%;

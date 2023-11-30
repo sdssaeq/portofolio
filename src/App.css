@@ -66,6 +66,7 @@ a {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 1;
 }
 
 .logo {
@@ -106,6 +107,7 @@ a {
 .container-navbar {
   padding-top: 100px;
 }
+
 .container {
   color: var(--second-text-color);
   height: 100vh;
@@ -127,7 +129,7 @@ a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .app.dark-mode .wrapper {
   color: var(--main-text-color);
@@ -152,7 +154,8 @@ a {
   width: 200px; /* Set the width of the circle */
   height: 200px; /* Set the height of the circle */
   border-radius: 50%; /* Make it a circle */
-  overflow: hidden; /* Hide overflowing content */
+  /* overflow: hidden; */
+  clip-path: circle(50% at 50% 50%);
   border: 1px solid black;
 }
 .circle img {
@@ -208,19 +211,28 @@ a {
 
 @media screen and (max-width: 640px) {
   .card {
-    width: 362px;
+    width: calc(100vw - 10vw);
     height: auto;
   }
   .card-contact {
     padding: 30px;
     font-size: 13px;
     flex-direction: row;
-    align-items: baseline;
-    /* justify-content: baseline; */
+    align-items: center;
   }
-
+  .container-navbar {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+  }
   .navbar {
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media (max-width: 800px) and (orientation: landscape) {
+  .container-navbar {
+    padding-top: 100vh;
+    padding-bottom: 20vh;
   }
 }

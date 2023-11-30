@@ -1,16 +1,35 @@
 import "react-toastify/dist/ReactToastify.css";
 import Foto from "../assets/foto.webp";
 import "../contact.css";
-
+import { useState, useEffect } from "react";
 function Contact() {
   const redirectToExternalUrl = (url: string) => {
     window.open(url, "_blank");
   };
+  const [screenSize, setScreenSize] = useState(getCurrentDimension());
+
+  function getCurrentDimension() {
+    return {
+      width: window.innerWidth,
+      height: window.innerHeight,
+    };
+  }
+
+  useEffect(() => {
+    const updateDimension = () => {
+      setScreenSize(getCurrentDimension());
+    };
+    window.addEventListener("resize", updateDimension);
+
+    return () => {
+      window.removeEventListener("resize", updateDimension);
+    };
+  }, [screenSize]);
 
   return (
     <>
       <section id="contact" className="section">
-        <div className="container">
+        <div className="container container-contact">
           <div className="card_contact">
             <div className="card_contact_half">
               <div className="circle_container">
@@ -98,6 +117,16 @@ function Contact() {
                 information! You can contact me for a quick response. Looking
                 forward to connecting!
               </p>
+              <div>
+                <ul>
+                  <li>
+                    Width: <strong>{screenSize.width}</strong>
+                  </li>
+                  <li>
+                    Height: <strong>{screenSize.height}</strong>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

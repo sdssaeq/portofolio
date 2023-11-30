@@ -26,7 +26,22 @@
   border-radius: 50%;
 }
 
-.container-project {
+.project-container {
+  height: auto;
+  width: auto;
+  /* padding-top: 5vh; */
+}
+.project-title {
+  padding-top: 1px;
+  flex-wrap: wrap;
+  padding: 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+/* .container-project {
   color: var(--second-text-color);
   height: 50vh;
   display: flex;
@@ -35,7 +50,7 @@
   align-items: center;
   padding: 20px;
   gap: 15px;
-}
+} */
 
 .wrapper-project {
   background-color: var(--second-bg-color);
@@ -50,15 +65,17 @@
   /* padding-top: 100px; */
   flex-wrap: wrap;
   padding: 30px;
+  padding-bottom: 20vh;
   display: flex;
   flex-direction: row;
   align-items: stretch;
   justify-content: center;
   gap: 10px;
 }
-.card-project h1 {
+
+/* .card-project h1 {
   padding-top: 120px;
-}
+} */
 
 .card-github {
   border-radius: 10px;
@@ -99,14 +116,26 @@
     justify-content: start;
     padding: 10px;
   }
+  .project-container {
+    padding-bottom: 10vh;
+  }
   .card-project {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
   }
+  .project-title {
+    padding-top: 10vh;
+  }
   .card-github {
     border-radius: 4%;
     padding: 0px;
+  }
+}
+
+@media (max-width: 800px) and (orientation: landscape) {
+  .project-container {
+    padding-top: 100vh;
   }
 }

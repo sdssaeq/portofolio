@@ -12,13 +12,15 @@ function Project() {
   return (
     <>
       <section id="project" className="section">
-        <div className="card-project">
-          <h1>My Github Project</h1>
-        </div>
-        <div className="card-project">
-          {repositoryLinks.map((link, index) => (
-            <GetData key={index} link={link} />
-          ))}
+        <div className="project-container">
+          <div className="project-title">
+            <h1>My Github Project</h1>
+          </div>
+          <div className="card-project">
+            {repositoryLinks.map((link, index) => (
+              <GetData key={index} link={link} />
+            ))}
+          </div>
         </div>
       </section>
     </>

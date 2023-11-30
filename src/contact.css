@@ -6,9 +6,15 @@
   --dark-mode-bg: #333;
   --dark-mode-text: #fff;
 }
+
+.container-contact {
+  height: auto;
+  width: auto;
+}
+
 .card_contact {
   width: 600px;
-  height: 600px;
+  height: auto;
   background-color: white;
   border-radius: 25px;
   border: 2px solid rgba(137, 212, 255, 1);
@@ -17,7 +23,7 @@
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  overflow: hidden;
+  clip-path: circle(50% at 50% 50%);
   object-fit: cover;
   object-position: top center;
   position: absolute;
@@ -138,5 +144,11 @@
   }
   .text_container {
     margin-top: 5%;
+  }
+}
+
+@media (max-width: 800px) and (orientation: landscape) {
+  .container-contact {
+    padding-top: calc(100vh - 80vh);
   }
 }

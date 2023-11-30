@@ -133,7 +133,12 @@
     padding: 0px;
   }
 }
-
+@media screen and (max-width: 360px) {
+  .project-container {
+    padding-bottom: 20vh;
+    padding-top: 10vh;
+  }
+}
 @media (max-width: 800px) and (orientation: landscape) {
   .project-container {
     padding-top: 100vh;

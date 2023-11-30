@@ -103,9 +103,9 @@ a {
   animation: gradientAnimation 5s infinite;
   font-size: xx-large;
 }
-.container-navbar {
-  padding-top: 100px;
-}
+
+/* .container-navbar {
+} */
 
 .container {
   color: var(--second-text-color);
@@ -127,12 +127,15 @@ a {
   backdrop-filter: blur(px);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  border-radius: 5px;
+  border-radius: 25px;
 }
 .app.dark-mode .wrapper {
   color: var(--main-text-color);
   background: none;
   background-color: var(--dark-mode-bg);
+}
+.app.dark-mode .card hr {
+  border-top: 1px solid var(--dark-mode-text);
 }
 .wrapper:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
@@ -149,10 +152,9 @@ a {
 }
 
 .circle {
-  width: 200px; /* Set the width of the circle */
-  height: 200px; /* Set the height of the circle */
-  border-radius: 50%; /* Make it a circle */
-  /* overflow: hidden; */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
   clip-path: circle(50% at 50% 50%);
   border: 1px solid black;
 }
@@ -205,8 +207,6 @@ a {
   flex-direction: row;
   align-items: baseline;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  /* justify-content: baseline; */
-  /* border: 1px solid black; */
   padding: 15px;
 }
 

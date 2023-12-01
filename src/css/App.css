@@ -10,6 +10,7 @@
   --main-text-color: #fff;
   --dark-mode-bg: #333;
   --dark-mode-text: #fff;
+  --dark-mode-border: #5d5d5d;
 }
 .dark-mode {
   background-color: var(--dark-mode-bg);
@@ -82,18 +83,6 @@ a {
   font-size: 18px;
 }
 /* Main.tsx css */
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .textColorChangeAnimation span {
   background: linear-gradient(45deg, #438eff, #1a4c91, #438eff);
   background-size: 200% 200%;
@@ -159,13 +148,14 @@ a {
   border: 1px solid black;
 }
 .app.dark-mode .circle {
-  border: 1px solid white;
+  border: 1px solid var(--dark-mode-border);
 }
 .circle img {
   width: 200px;
   height: 200px;
   object-fit: cover;
   object-position: top center;
+  user-select: none;
 }
 
 /* Skill.tsx css */
@@ -209,6 +199,26 @@ a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 15px;
 }
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 @media screen and (max-width: 640px) {
   .card {
@@ -218,12 +228,12 @@ a {
   .card-contact {
     padding: 30px;
     font-size: 13px;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
   }
   .container-navbar {
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    padding-top: 60vh;
+    padding-bottom: 70vh;
   }
   .navbar {
     justify-content: center;

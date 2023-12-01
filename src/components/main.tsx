@@ -3,8 +3,6 @@ function Main() {
   return (
     <>
       <section id="about" className="section">
-        <br />
-        <br />
         <div className="container container-navbar">
           <div className="wrapper">
             <div className="card">
@@ -15,13 +13,15 @@ function Main() {
                 <br />
                 <hr />
                 <br />
-                <p>
+                <p className="textColorChangeAnimation">
                   on the verge of graduating from Universitas Bina Insani.
                   Currently in my final year, honing my skills to create robust
-                  and user-friendly full stack applications.
+                  and user-friendly Full Stack applications.
                 </p>
               </div>
-              <h1>Tech Stack</h1>
+              <h1 className="textColorChangeAnimation">
+                <span>Tech Stack</span>
+              </h1>
               <div className="card card-skill">
                 <svg
                   aria-hidden="true"

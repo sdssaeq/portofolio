@@ -1,6 +1,6 @@
 import "react-toastify/dist/ReactToastify.css";
 import Foto from "../assets/foto.webp";
-import "../contact.css";
+import "../css/contact.css";
 import { useState, useEffect } from "react";
 function Contact() {
   const redirectToExternalUrl = (url: string) => {

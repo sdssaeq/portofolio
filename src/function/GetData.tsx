@@ -1,6 +1,5 @@
 import { useState, useEffect, CSSProperties } from "react";
-import "../project.css";
-// import "../App.css";
+import "../css/project.css";
 interface ProjectData {
   name: string;
   language: string;
@@ -11,9 +10,10 @@ interface ProjectData {
 }
 interface ProjectProps {
   link: string;
+  activeIndex: number;
 }
 
-function GetData({ link }: ProjectProps) {
+function GetData({ link, activeIndex }: ProjectProps) {
   const redirectToExternalUrl = (url: string) => {
     window.open(url, "_blank");
   };
@@ -55,6 +55,9 @@ function GetData({ link }: ProjectProps) {
     <>
       <div
         className="card-github"
+        style={{
+          transform: `translateX(-${activeIndex * 100}%)`,
+        }}
         onClick={() => redirectToExternalUrl(data.svn_url)}
       >
         <div className="header">

@@ -1,4 +1,4 @@
-import "./App.css";
+import "../src/css/App.css";
 import { useState } from "react";
 import Contact from "./components/contact";
 import Main from "./components/main";

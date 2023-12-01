@@ -1,0 +1,60 @@
+.bullet-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.bullet.active-bullet {
+  background-color: #555;
+}
+
+.btn-prev {
+  position: absolute;
+  top: 80%;
+  right: 60%;
+}
+
+.btn-next {
+  position: absolute;
+  top: 80%;
+  left: 60%;
+}
+
+@media screen and (max-width: 640px) {
+  .btn-prev {
+    top: 75%;
+    right: 65%;
+  }
+  .btn-next {
+    top: 75%;
+    left: 65%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .btn-prev {
+    top: 75%;
+    right: 65%;
+  }
+  .btn-next {
+    top: 75%;
+    left: 65%;
+  }
+}
+
+@media (max-width: 800px) and (orientation: landscape) {
+  .btn-prev {
+    top: 93%;
+  }
+  .btn-next {
+    top: 93%;
+  }
+}
